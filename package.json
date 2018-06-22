@@ -1,0 +1,36 @@
+{
+  "author": "github.com/ItsLeeOwen",
+  "name": "chrome-extension-starter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/webpack",
+    "deploy": "npm run build & surge dist",
+    "dev": "npm run start",
+    "postinstall": "npm run start",
+    "start": "node_modules/.bin/webpack-dev-server",
+    "start-env-example": "source ./.env || node_modules/.bin/webpack-dev-server"
+  },
+  "webpack": {
+    "entry": {
+      "background.js": "./src/background.js",
+      "content.js": "./src/content.js",
+      "popup.html": "./src/popup.html",
+      "popup.js": "./src/popup.js"
+    },
+    "output": {
+      "filename": "[name].js",
+      "path": "dist"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
+    "webpack-config-starter": "^0.0.1"
+  }
+}

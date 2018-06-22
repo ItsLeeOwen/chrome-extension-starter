@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  min-height: 300px;
+  font-family: 'Open Sans', sans-serif;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: url("https://i.imgur.com/zPe5TBg.png");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0,
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.abbykins,
+.fluffykins {
+  img {
+    max-width: 100%;
+  }
+}
