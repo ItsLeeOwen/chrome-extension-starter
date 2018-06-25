@@ -7,9 +7,9 @@
       "default_title": "Chrome Extension Starter",
       "default_popup": "popup.html"
     },
-    "key": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoDP5zz557fU7RF5SX6C67WlS+wr6IajKtewUMofozLXG4Pgyh6Cxuib36+9LqcT9N6ZzdFIEpbUmNOBJovHbPn1KP5wPvkrarQPi6AsSrcvKXJzPj5lzLCIS5+ubIAG+oqv69aTDeV70WvJugQUVq+/pdPqix/iAJpu6SPfyyWEGAx6EoOgsr4xqD0swxVINkBnv+UYodHZWwwIwrzWBA6a1pB09nw2knIwOJHBKHL7QW+zqlcsRhm1rhtu5OCrfA3nUIoGPSX2Vnv+xo+L5Cjb8FboeyUOVB6P/OQEIYJDIQRNObGjzJbXqm14zlc0dqZ0tfOy1DZiwrh54+wTZvQIDAQAB-----END PUBLIC KEY-----",
+    "key": "process.env.CHROME_PUBLIC_KEY",
     "oauth2": {
-      "client_id": "736837297898-5j95h1pfeji56bo07t0qng1a20kb52lo.apps.googleusercontent.com",
+      "client_id": "process.env.CHROME_CLIENT_ID",
       "scopes": [
         "https://www.googleapis.com/auth/userinfo.profile",
         "https://www.googleapis.com/auth/userinfo.email"
