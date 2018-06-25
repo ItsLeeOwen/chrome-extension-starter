@@ -33,7 +33,7 @@ export default class App extends React.Component {
           <Link to="/">React App Starter</Link>
         </h1>
         <nav>
-          <Link to="/abbykins">Abbykins!</Link>
+          <Link to="/abbykins">Abbykins</Link>
           <br />
           <Link to="/fluffykins">Fluffykins</Link>
         </nav>
