@@ -1,6 +1,6 @@
 'use strict';
 
-console.log("chrome-extension-starter background.js")
+console.log("chrome-extension-starter background.js?")
 
 let TMP_TOKEN
 

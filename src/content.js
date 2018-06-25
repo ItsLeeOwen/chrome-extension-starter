@@ -1,4 +1,4 @@
-console.log("chrome-extension-starter content.js")
+console.log("chrome-extension-starter content.js?")
 
 setTimeout(sayHello, 2000)
 

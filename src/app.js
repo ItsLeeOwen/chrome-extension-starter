@@ -13,16 +13,16 @@ export default class App extends React.Component {
   static Var = "Hello"
 
   logout = () => {
-    // chrome.runtime.sendMessage({
-    //   event: "LOGOUT",
-    // }, response => {
-    //   console.log("app.js", "logout response", response)
-    // })
     chrome.identity.launchWebAuthFlow({
       url: "https://accounts.google.com/logout",
       "interactive": true,
     }, () => {
       console.log("app.js launchedWebAuthFlow response", arguments)
+    })
+    chrome.runtime.sendMessage({
+      event: "LOGOUT",
+    }, response => {
+      console.log("app.js", "logout response", response)
     })
   }
 
